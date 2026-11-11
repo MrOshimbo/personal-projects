@@ -14,6 +14,29 @@ This is an early-stage concept, not a decision to form an LLC.
 - **Live music events:** Explore producing paid events for bands, including the business model and practical operating requirements.
 - **Future ventures:** Leave room for additional business ideas as they develop.
 
+## First live-event concept
+
+**Working concept:** A small, intimate, youth-oriented live-music showcase featuring multiple bands performing sequentially, with the possibility of a DJ opening the event.
+
+**Intended audience:** High-school through college-age attendees. The exact minimum age has not yet been selected.
+
+**Timing to explore:** A Saturday early-evening event, provisionally around 5:00–9:00 PM. This is a planning starting point, not a confirmed event schedule.
+
+**Planning considerations for younger attendees:**
+- Decide and clearly communicate the event's minimum age before selecting a venue or selling tickets.
+- Confirm in writing that the venue permits the intended age group and event format.
+- Consider an alcohol-free event for the initial show.
+- Plan appropriate adult staffing, check-in, security, emergency procedures, parent-facing information, and safe pickup/transportation.
+- Build the running order so the event finishes at a reasonable hour for high-school attendees.
+
+### First milestone: Set the age policy
+
+Resolve the minimum age for the first event before moving into venue selection, ticketing, and detailed budgeting. Options under consideration:
+- All ages, including younger teenagers.
+- 16 and older.
+- 18 and older.
+
+**Status:** Open — the user has agreed to make this the first milestone, but has not yet selected an age cutoff. Do not treat any option as decided.
 ## Questions to explore
 
 1. What kinds of ventures might belong under the umbrella?
@@ -30,7 +53,7 @@ These are research questions, not legal or tax conclusions. Get advice from qual
 
 **Known starting point:** A possible umbrella LLC for multiple ventures, with paid events for bands as the first concrete business concept.
 
-**Next step:** Develop the live-events concept and identify what other ventures might fit under the same umbrella before deciding on a legal structure.
+**Next step:** Complete the first live-event milestone by choosing the minimum age policy. Then use that decision to guide venue requirements, event timing, staffing, and the initial budget.
 
 ## Decision log
 
