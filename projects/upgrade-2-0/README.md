@@ -36,7 +36,7 @@ Grow professionally while continuing to learn and explore beyond the demands of 
 
 Invest in the people, connections, and experiences that make life meaningful and enjoyable.
 
-- **Family** — be intentional about time, connection, and shared experiences with family.
+- **Relationships and quality time** — be intentional about nurturing important relationships, spending meaningful time together, and being present with the people who matter.
 - **Friendships and social connections** — nurture existing friendships and make room for new connections.
 - **Experiences and enjoyment** — make time for live music, travel, events, hobbies, and trying new things.
 - **Meaningful moments** — create memories and prioritize activities that bring joy, connection, and a sense of fulfillment.
@@ -57,3 +57,4 @@ Invest in the people, connections, and experiences that make life meaningful and
 ## Decision log
 
 - **2026-11-11:** Selected Upgrade 2.0 as the working project name and established the initial pillars: Health & Well-being, Financial Well-being, Career & Personal Growth, and Relationships & Experiences.
+- **2026-11-11:** Refined the first focus area under Pillar 4 from Family to Relationships and quality time.
