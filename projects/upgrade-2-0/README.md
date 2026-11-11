@@ -6,7 +6,7 @@
 
 Upgrade 2.0 is a personal development project focused on making meaningful, sustainable improvements across life as a whole. The goal is to feel better, live better, and become the person you want to be—not to pursue perfection or turn life into another work assignment.
 
-The project begins with three pillars. These are starting areas, and the structure can evolve as priorities become clearer.
+The project is organized around four pillars. These are starting areas, and the structure can evolve as priorities become clearer.
 
 ## Pillar 1: Health & Well-being
 
@@ -32,19 +32,28 @@ Grow professionally while continuing to learn and explore beyond the demands of 
 - **Education and continuous learning** — pursue useful knowledge, courses, and subjects of personal interest.
 - **Skills and intellectual exploration** — develop capabilities and interests that contribute to a richer life.
 
+## Pillar 4: Relationships & Experiences
+
+Invest in the people, connections, and experiences that make life meaningful and enjoyable.
+
+- **Family** — be intentional about time, connection, and shared experiences with family.
+- **Friendships and social connections** — nurture existing friendships and make room for new connections.
+- **Experiences and enjoyment** — make time for live music, travel, events, hobbies, and trying new things.
+- **Meaningful moments** — create memories and prioritize activities that bring joy, connection, and a sense of fulfillment.
+
 ## Working approach
 
 - Favor realistic, sustainable improvements over dramatic short-term changes.
 - Identify a few concrete goals at a time within each pillar.
 - Track actions and progress, and revisit priorities as circumstances change.
-- Keep the project broad enough to include other important areas—such as relationships, family, and experiences—if they become priorities.
+- Keep the pillars flexible; add or refine focus areas as life and priorities evolve.
 
 ## Current status
 
-**Status:** Initial structure defined.
+**Status:** Initial four-pillar structure defined.
 
 **Next step:** Turn each pillar into a small set of specific goals and practical next actions.
 
 ## Decision log
 
-- **2026-11-11:** Selected Upgrade 2.0 as the working project name and established the initial pillars: Health & Well-being, Financial Well-being, and Career & Personal Growth.
+- **2026-11-11:** Selected Upgrade 2.0 as the working project name and established the initial pillars: Health & Well-being, Financial Well-being, Career & Personal Growth, and Relationships & Experiences.
