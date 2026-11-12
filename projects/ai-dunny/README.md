@@ -235,12 +235,16 @@ This proves the core streaming voice path at the software/network level before p
 | ESP32-S3 → Realtime microphone audio streaming | **PASS** — left and right mic channels each sent as 4-second mono streams in 200 × 20 ms chunks; Realtime detected speech, committed it, and completed responses |
 | Realtime server VAD turn detection with ESP32 microphone audio | **PASS** — speech started/stopped, input committed, and response completed on both mic channels |
 | ESP32 receipt of complete Realtime output audio | **PASS** — decoded 326,400 PCM bytes into PSRAM |
-| Realtime → ESP32-S3 → MAX98357A playback | **PASS** — direct I²S playback through one 8 Ω speaker for both mic-channel tests; no WAV file saved |
+| Earlier Waveshare ESP32-S3 → MAX98357A playback test | **PASS in the earlier bench test** | Direct I²S playback through one 8 Ω speaker was demonstrated for both microphone-channel tests; this historical result is retained, but does not establish reliable playback in the later Nov. 12 setup. |
+| Nov. 12 ESP32-S3 microphone-to-Realtime streaming | **Reported working** | User confirmed microphone audio streamed to Realtime; exact board/sketch revision and repeatability were not recorded. |
+| MAX98357A amplifier installation | **Reported complete** | Added to the Nov. 12 hardware setup. |
+| Nov. 12 speaker output | **Intermittent / unresolved** | Output was quiet but intelligible once; a later playback attempt was silent. Reliable playback is not confirmed. |
+| Reliable standalone I²S test-tone playback | **Not yet demonstrated** | Immediate next milestone; isolate the ESP32-S3 → MAX98357A → speaker path from Realtime/WebSocket code. |
 | Push-to-talk hardware | **Not yet tested** |
 | Six-motor control | **Future** |
 | Battery operation | **Future** |
 
-**Bench prototype note:** The microphone tests above use the Waveshare ESP32-S3-DEV-KIT-N8R8 and SPH0645. Section 8 records the earlier planned Metro/ICS-43434 hardware; that setup has not been validated by these tests.
+**Hardware qualification:** The earlier detailed microphone and Realtime tests above used the Waveshare ESP32-S3-DEV-KIT-N8R8 and SPH0645 microphones. The Nov. 12 report confirms microphone-to-Realtime streaming and an intermittent speaker result on an ESP32-S3 setup, but does not identify the exact board or sketch revision. The planned Adafruit Metro ESP32-S3 Rev B / ICS-43434 setup remains separately unvalidated.
 
 ## 8. Decisions & Rationale
 
@@ -282,10 +286,20 @@ Version 0.1 component selection should consider the eventual battery-powered, mo
 
 ## 10. Project Status
 
-**Current phase:** Version 0.1 — standalone ESP32-S3 left and right microphones have each passed Realtime server-VAD streaming and direct speaker playback; testing a combined mono signal from both microphones is next.
+**Current phase:** Version 0.1 — ESP32-S3 Realtime microphone streaming has been reported working. The current immediate milestone is reliable, repeatable speaker playback through I²S TX → MAX98357A → one 8 Ω speaker.
 
-**Major milestone:** Realtime voice round trip has been proven on the Raspberry Pi Zero W. On the standalone Waveshare ESP32-S3-DEV-KIT-N8R8, both I²S microphone channels are validated locally and have each passed a 4-second Realtime server-VAD stream in 200 × 20 ms chunks. Realtime detected and committed speech, generated responses, and returned PCM audio. The ESP32 played the responses directly through the MAX98357A and one 8 Ω speaker without saving WAV files.
+**Confirmed software milestone:** The Raspberry Pi Zero W Realtime audio round trip remains complete. Earlier Waveshare ESP32-S3 / SPH0645 bench tests also demonstrated individual microphone-channel streaming to Realtime and direct speaker playback. These earlier test results are retained as historical evidence; they do not establish that the later speaker setup is currently reliable.
 
-**Immediate next tasks:** Test a combined mono signal from both I²S microphone channels through the server-VAD Realtime and direct speaker playback path, then compare it with the individual-channel results. Continue converting 48 kHz stereo I²S to mono PCM16 at 24 kHz in 20 ms chunks. Evaluate manual turn control only if server VAD timing or sensitivity proves unsuitable. The Metro/ICS-43434 setup and speaker output path in the earlier hardware plan remain unvalidated; test the MAX98357A speaker path independently before adding more speakers. Do not connect all four speakers to the mono amplifier until a suitable configuration is verified.
+**Latest update — November 12, 2026:** The user checked the I²S microphone and successfully streamed microphone audio from an ESP32-S3 to the OpenAI Realtime API. The MAX98357A amplifier was installed. Speaker output was heard once at low but intelligible volume; a later playback attempt was silent. The exact board and sketch revision for this latest report were not recorded. Reliable/repeatable speaker playback is therefore **not yet confirmed**.
 
-**Last updated:** November 9, 2026
+**Immediate next tasks:**
+1. Preserve a copy of the current .ino sketch before making further edits; locate a pre-volume-adjustment version if one exists.
+2. With power disconnected, inspect the speaker terminals and repaired solder joint. Check for secure connections, solder bridges, and exposed strands; use a multimeter for continuity if available.
+3. Run a conservative standalone I²S test tone through the ESP32-S3 → MAX98357A → one speaker path, independently of Realtime/WebSocket code.
+4. If the tone is silent or intermittent, investigate speaker wiring, amplifier power/ground, enable/shutdown state if used, I²S clocks/data, and output configuration. If it plays repeatedly, return to Realtime playback and inspect received audio data and I²S write results.
+5. Compare the current sketch with the pre-volume-adjustment version, if available. Change volume/gain only after a repeatable baseline works, changing one value at a time.
+6. Once speaker playback is stable, resume combined-microphone and full two-way voice testing. Do not restart microphone/API work already reported as working.
+
+**Hardware distinction:** The Adafruit Metro ESP32-S3 Rev B / ICS-43434 target architecture and its board-specific pin map still require validation. The earlier Waveshare/SPH0645 bench results should not be treated as proof that the Metro configuration is complete.
+
+**Last updated:** November 12, 2026
